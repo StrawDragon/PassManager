@@ -1,1 +1,5 @@
-import test from "./components/test";
+import App from 'app';
+
+let app = new App();
+
+app.init();

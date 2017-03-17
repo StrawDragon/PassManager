@@ -22,7 +22,8 @@ module.exports = function (rootPath){
             }]
         },
         resolve: {
-            extensions: ['.js', '.jsx']
+            extensions: ['.js', '.jsx'],
+            modules: [path.resolve(rootPath, 'src'), 'node_modules']
         },
         plugins: [
             new extractTextPlugin("css/app.css")
